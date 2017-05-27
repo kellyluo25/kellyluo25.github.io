@@ -1,2 +1,2 @@
-# kellyluo25.github.io
-kelly luo
+# kellyluo25
+**in progress**: personal website + portfolio 

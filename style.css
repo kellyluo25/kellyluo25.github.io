@@ -20,8 +20,8 @@ a {
     -ms-transition-duration:600ms;
 }
 
-a: hover, a: active {
-    color:#FF7585
+a:hover, a:active {
+    color: #FF7585;
 }
 
 b, em {
@@ -73,20 +73,30 @@ h1 {
 
 .links {
     position:absolute;
-    bottom:20px;
-    right:20px;
-    width:100px;
-    height:50px;
-    vertical-align:right;
-    text-transform:lowercase;
-    font-size:10px;
-    letter-spacing:1px;
-    text-align:right!important;
-    border-right:2px solid black;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    vertical-align: right;
+    text-transform: lowercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 130%; 
+    text-align: right!important;
+/*    border-right: 2px solid black;*/
     padding-right:8px;
+}
+
+.links a:after {
+    content: '+';
+    font-weight: bold;
+    margin-left: 5px;
 }
 
 .links a {
     display:block;
     margin-top:5px;
+}
+
+.links a:before {
+    font-style: italic; 
 }

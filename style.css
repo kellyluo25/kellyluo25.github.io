@@ -34,19 +34,23 @@ h1 {
     margin:0;
 }
 
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
 .card {
     width:400px;
     height:200px;
     background-color:#fff;
-    position:fixed;
-    left:50%; top:50%;
-    margin-left:-225px;margin-top:-115px;
     padding:20px;
     box-shadow:2px 2px 3px #ccc;
-    text-align:center;
 }
 
 .name {
+    width: 400px;
     text-transform:lowercase;
     font-size:45px;
     letter-spacing:3px;
@@ -55,12 +59,15 @@ h1 {
     font-family:Playfair Display;
     font-weight: 700;
     font-style: italic;
+    text-align: center;
 }
 
 .title {
-    font-family:Didot;
+    width: 400px;
+    font-family: Didot, Georgia, serif;
     font-style:italic;
     padding-top:6px;
+    text-align: center;
 }
 
 .status {
@@ -72,10 +79,7 @@ h1 {
 }
 
 .links {
-    position:absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 100px;
+    position: relative;
     vertical-align: right;
     text-transform: lowercase;
     font-size: 10px;

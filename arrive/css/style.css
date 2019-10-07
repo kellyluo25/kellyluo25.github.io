@@ -17,6 +17,7 @@ p {
 }
 
 .nav {
+    margin-top: 35px; 
     margin-bottom: 20px;
 }
 
@@ -55,6 +56,11 @@ h4 {
     margin-top: 30px; 
 }
 
+h5 {
+    font-family: 'Source Sans Pro', 'Georgia', serif;
+    font-weight: 300; 
+}
+
 .h4subtitle {
     font-style: italic; 
     font-weight: 300;
@@ -79,18 +85,22 @@ a {
 }
 
 a:hover {
-    text-decoration: none; 
     color: #979bdb;
+     text-decoration: underline; 
 }
 
 a:active {
-    text-decoration: none; 
+    text-decoration: underline; 
     color: #979bdb;
 }
 
 a:selected {
-    text-decoration: none; 
+    text-decoration: underline; 
     color: #979bdb;
+}
+
+.linkselect {
+    text-decoration: underline; 
 }
 
 /* structure */
@@ -103,22 +113,6 @@ a:selected {
 .row {
     padding-left: 15px; 
     padding-right: 15px; 
-}
-
-.page-img {
-    width: 100%; 
-    margin-bottom: 10px; 
-}
-
-.page-section { 
-    margin-bottom: 85px; 
-}
-
-.page-caption {
-    text-align: left; 
-    font-size: 11px; 
-    color: #606060;
-    font-family: 'Open Sans', Verdana, sans-serif;
 }
 
 .page-footer {
@@ -140,4 +134,35 @@ a:selected {
     color: #505050;
 	font-size: 20px;
     font-style: italic;
+}
+
+li {
+    font-family: 'Merriweather', 'Georgia', serif; 
+    line-height: 1.75em;
+    font-size: 1rem; 
+}
+
+ol {
+   list-style: none;
+   counter-reset: mycount;
+ }
+ li {
+   counter-increment: mycount;
+   margin-bottom: 5px;
+ }
+
+ol li::before {
+ font-family: 'Source Sans Pro', 'Georgia', serif;
+  content: "  (  " counter(mycount) "  )  " " ";
+   font-weight: bold; 
+    margin-right: 5px; 
+}
+
+img {
+margin-top: 10px; 
+}
+
+::selection {
+    background: #9ec4ff;
+    color: #ffffff;
 }

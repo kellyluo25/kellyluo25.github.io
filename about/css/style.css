@@ -4,6 +4,11 @@
     }
 }
 
+.emphasis {
+    font-style: italic;
+}
+
+
 p {
    font-family: 'Merriweather', 'Georgia', serif; 
     line-height: 1.75em;
@@ -22,9 +27,9 @@ p {
 }
 
 .heading {
-    text-align: left; 
-    font-family: 'Playfair Display', 'Georgia', serif;
-    font-weight: 300; 
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; 
+    font-size: 50px; 
     text-align: left; 
     position: relative; 
     color: #e6b8c5; 

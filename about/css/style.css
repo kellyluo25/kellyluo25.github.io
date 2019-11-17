@@ -6,6 +6,7 @@
 
 .emphasis {
     font-style: italic;
+    font-weight: 700; 
 }
 
 
@@ -28,7 +29,7 @@ p {
 
 .heading {
     font-family: 'Playfair Display', serif;
-    font-weight: 700; 
+    font-weight: 400; 
     font-size: 50px; 
     text-align: left; 
     position: relative; 

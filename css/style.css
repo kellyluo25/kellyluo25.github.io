@@ -112,10 +112,10 @@ a:hover, a:active {
 }
 
 ::selection {
-    background: #9ec4ff; /* Safari */
+    background: #c4daf5; /* Safari */
     color: #ffffff;
     }
 ::-moz-selection {
-    background: #9ec4ff; /* Firefox */
+    background: #c4daf5; /* Firefox */
     color: #ffffff;
     }

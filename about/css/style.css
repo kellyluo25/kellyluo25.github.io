@@ -1,3 +1,25 @@
+
+/* scrollbar and selection */ 
+
+::-webkit-scrollbar{
+  height:10px;
+  width:5px;
+  background:inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#feafbf;
+}
+
+::-webkit-scrollbar-track {
+  background:transparent;
+}
+
+::selection {
+  background: #c4daf5;
+  color: #ffffff;
+}
+
 @media (min-width: 768px) {
     .container-fluid {
         max-width: 60%;
@@ -195,9 +217,4 @@ ol li::before {
 
 img {
 margin-top: 20px; 
-}
-
-::selection {
-    background: #c4daf5;
-    color: #ffffff;
 }

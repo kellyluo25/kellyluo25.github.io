@@ -58,7 +58,7 @@ p {
     text-transform: lowercase;
     font-size: 12px;
     letter-spacing: 1px;
-    line-height: 300%; 
+    line-height: 280%; 
     text-align: right;
 }
 
@@ -77,18 +77,18 @@ a:hover, a:active {
 }
 
 
-.links a:after {
+.links:after {
     content: '+';
     font-weight: bold;
     margin-left: 5px;
 }
 
-.links a {
+.links {
     display:block;
     margin-top:5px;
 }
 
-.links a:before {
+.links:before {
     font-style: italic; 
 }
 
@@ -99,6 +99,11 @@ a:hover, a:active {
     text-align: right;
     font-size: 12px;
     font-style: italic; 
+}
+
+.caption a, .caption a:hover {
+    text-decoration: none;
+    color: #000; 
 }
 
 @keyframes showtransition {

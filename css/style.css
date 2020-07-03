@@ -64,18 +64,24 @@ p {
 
 a {
     text-decoration:none;
-    -webkit-transition-duration:600ms;
-    -o-transition-duration:600ms;
-    -moz-transition-duration:600ms;
-    -ms-transition-duration:600ms;
+    -webkit-transition-duration:800ms;
+    -o-transition-duration:800ms;
+    -moz-transition-duration:800ms;
+    -ms-transition-duration:800ms;
     color: #FF7585; 
 }
 
 a:hover, a:active {
     color: #9ec4ff;
     text-decoration: none;
+    transition: opacity 2s ease-in-out both;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 .links:after {
     content: '+';
@@ -104,6 +110,7 @@ a:hover, a:active {
 .caption a, .caption a:hover {
     text-decoration: none;
     color: #000; 
+    transition: opacity 1s ease-in-out both;
 }
 
 @keyframes showtransition {

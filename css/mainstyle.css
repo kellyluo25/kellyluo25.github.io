@@ -1,0 +1,133 @@
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body { 
+    background-color: #fafcff;
+}
+
+#header {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    margin: 0 auto; 
+    padding: 5% 6%; 
+}
+
+@media (min-width: 85rem) {
+.container {
+width: 65rem;
+}
+    
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; 
+    font-size: 4vw;
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+@media (max-width: 567px){
+    p {
+    font-size: 14px !important;
+    } 
+    .links {
+        text-align: left!important;
+    } 
+    .caption {
+        text-align: left!important;
+        display: block!important
+    } 
+}
+
+.links {
+    position: relative;
+    vertical-align: right;
+    text-transform: lowercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 280%; 
+    text-align: right;
+}
+
+a {
+    text-decoration:none;
+    -webkit-transition-duration:800ms;
+    -o-transition-duration:800ms;
+    -moz-transition-duration:800ms;
+    -ms-transition-duration:800ms;
+    color: #FF7585; 
+}
+
+a:hover, a:active {
+    color: #9ec4ff;
+    text-decoration: none;
+    transition: opacity 2s ease-in-out both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links:after {
+    content: '+';
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.links {
+    display:block;
+    margin-top:5px;
+}
+
+.links:before {
+    font-style: italic; 
+}
+
+.caption {
+    display: none;
+    letter-spacing: 0px;
+    line-height: normal; 
+    text-align: right;
+    font-size: 12px;
+    font-style: italic; 
+}
+
+.caption a, .caption a:hover {
+    text-decoration: none;
+    color: #000; 
+    transition: opacity 1s ease-in-out both;
+}
+
+@keyframes showtransition {
+  from {opacity: 0;}
+  to {opacity: 1;}
+} 
+
+.show:hover .caption {
+    display: block;
+    animation: showtransition 1s ease-in-out both;
+}
+
+::selection {
+    background: #c4daf5; /* Safari */
+    color: #ffffff;
+    }
+::-moz-selection {
+    background: #c4daf5; /* Firefox */
+    color: #ffffff;
+    }

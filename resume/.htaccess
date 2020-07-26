@@ -1,1 +1,4 @@
-Redirect 301 /resume https://resume.kellyluo.me/
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(?:www\.)?kelly\.me$ [NC]
+RewriteRule (.*) http://resume.kelly.me/$1 [NE,R=302,L]

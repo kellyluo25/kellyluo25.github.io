@@ -1,4 +1,4 @@
-RewriteEngine On
+RewriteEngine on
+RewriteBase /
 
-RewriteCond %{HTTP_HOST} ^(?:www\.)?kelly\.me$ [NC]
-RewriteRule (.*) http://resume.kelly.me/$1 [NE,R=302,L]
+RewriteRule ^/resume/(.*)$ http://resume.kellyluo.me/$1 [R=301,L]

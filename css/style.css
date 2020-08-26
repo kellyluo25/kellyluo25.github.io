@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background:#feafbf;
+  background: #feafbf;
 }
 
 ::-webkit-scrollbar-track {
@@ -115,11 +115,6 @@ a {
 
 }
 
-a.footerlink {
-    letter-spacing: 2px; 
-    font-size: 16px; 
-}
-
 a.inlinelink {
     color: #979bdb;
     border-bottom: 1px lightgray dotted; 
@@ -177,26 +172,30 @@ a:selected {
 .page-footer {
     text-align: center; 
     margin-top: 100px; 
-    padding-bottom: 15px; 
+    padding-bottom: 25px; 
 }
 
+
+/* footer */
 .footer-divider {
     background-color: #707070;
-	height: 1px;
+	height: .5px;
 	width: 200px;
     text-align: center;
     margin: 20px auto;
 }
 
-.footer-text {
-    font-family: 'Playfair Display', 'Georgia', 'Serif';
+a.footerlink {
+    font-family: 'Playfair Display', 'Georgia', serif;
     color: #505050;
 	font-size: 20px;
     font-style: italic;
+    font-weight: 400; 
 }
 
-.footer-text:hover {
+a.footerlink:hover {
     font-weight: 700;
+    color: #feafbf; 
     text-decoration: none; 
 }
 

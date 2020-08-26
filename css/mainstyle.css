@@ -6,7 +6,7 @@
 }
 
 body { 
-    background-color: #fafcff;
+    background-color: #f7f7f7;
 }
 
 #header {
@@ -19,7 +19,7 @@ body {
 
 @media (min-width: 85rem) {
 .container {
-width: 65rem;
+    width: 65rem;
 }
     
 }
@@ -39,9 +39,23 @@ p {
     font-size: 16px;
 }
 
-@media (max-width: 567px){
+@media (max-width: 575px){
+    h1 {
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 450px){
+    h1 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 750px){
     p {
-    font-size: 14px !important;
+        font-size: 14px !important;
     } 
     .links {
         text-align: left!important;
@@ -131,3 +145,13 @@ ul {
     background: #c4daf5; /* Firefox */
     color: #ffffff;
     }
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

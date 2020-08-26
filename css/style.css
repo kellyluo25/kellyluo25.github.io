@@ -195,6 +195,11 @@ a:selected {
     font-style: italic;
 }
 
+.footer-text:hover {
+    font-weight: 700;
+    text-decoration: none; 
+}
+
 li {
     font-family: 'Merriweather', 'Georgia', serif; 
     line-height: 1.75em;

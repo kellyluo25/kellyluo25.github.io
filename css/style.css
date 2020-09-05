@@ -1,3 +1,14 @@
+/*colors*/
+
+:root{
+  --yellow: #efd75b; 
+  --pink: #feafbf;
+  --cornflower: #c4daf5; 
+  --lilac: #aeafd6; 
+  --darkgray: #555555; 
+  --lightgray: #999999; 
+}
+
 
 /* scrollbar and selection */ 
 
@@ -8,7 +19,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #feafbf;
+  background: var(--pink);
 }
 
 ::-webkit-scrollbar-track {
@@ -16,7 +27,7 @@
 }
 
 ::selection {
-  background: #c4daf5;
+  background: var(--cornflower);
   color: #ffffff;
 }
 
@@ -77,15 +88,32 @@ h2 {
     text-transform: uppercase; 
 }
 
+/*resume*/
 h3 {
     margin-top: 60px; 
     margin-bottom: 20px; 
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
+/*about*/
 h4 {
     font-size: 25px; 
     margin-top: 75px; 
     margin-bottom: 20px; 
+    letter-spacing: .5px; 
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 h5 {
@@ -108,7 +136,8 @@ h5 {
     margin-right: 10px; 
     font-size: 16px; 
 }
-/* header */
+
+/* links */
 a {
     text-decoration: none; 
     color: #979bdb;
@@ -144,8 +173,23 @@ a:selected {
     text-decoration: underline; 
 }
 
+a.contactlinks {
+    font-family: 'Source Sans Pro', 'Georgia', serif;
+    font-weight: 300;
+    margin-top: -20px;
+    color: var(--darkgray);
+    border-bottom: 1px lightgray dotted; 
+    text-decoration: none; 
+}
+
+a.contactlinks:hover {
+    color: var(--lilac);
+    border-bottom: 1px var(--lilac) dotted; 
+    text-decoration: none; 
+}
+
 .caption {
-     font-family: 'Source Sans Pro', 'Georgia', serif;
+    font-family: 'Source Sans Pro', 'Georgia', serif;
     font-size: 16px; 
     font-weight: 300;
 }
@@ -209,6 +253,7 @@ ol {
    list-style: none;
    counter-reset: mycount;
  }
+
  li {
    counter-increment: mycount;
    margin-bottom: 5px;
@@ -221,6 +266,19 @@ ol li::before {
     margin-right: 5px; 
 }
 
+ul {
+    list-style: none; 
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--lilac);
+  display: inline-block; 
+  width: 1.25em;
+  margin-left: -1em;
+  font-weight: bold;
+}
+
 img {
 margin-top: 20px; 
 }
@@ -230,5 +288,21 @@ margin-top: 20px;
     width: 35%; 
     float: right; 
     margin-top: 0px; 
-    transform: rotate(5deg);
+    transform: rotate(2.5deg);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/*contact*/
+.contact {
+     font-family: 'Source Sans Pro', 'Georgia', serif;
+    letter-spacing: 1px; 
 }

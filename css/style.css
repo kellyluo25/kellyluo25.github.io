@@ -299,8 +299,7 @@ ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: var(--lilac);
   display: inline-block; 
-  width: 1.25em;
-  margin-left: -1em;
+  width: 1.5em;
   font-weight: bold;
 }
 

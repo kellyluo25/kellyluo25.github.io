@@ -251,7 +251,7 @@ a.contactlinks:hover {
 	height: .5px;
 	width: 200px;
     text-align: center;
-    margin: 20px auto;
+    margin: 20px auto 40px auto;
 }
 
 a.footerlink {

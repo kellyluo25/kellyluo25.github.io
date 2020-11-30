@@ -85,7 +85,7 @@ a {
     color: #FF7585; 
 }
 
-a:hover, a:active {
+a:hover {
     color: #9ec4ff;
     text-decoration: none;
     transition: opacity 2s ease-in-out both;

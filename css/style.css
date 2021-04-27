@@ -37,7 +37,7 @@
 
 @media (min-width: 768px) {
     .container-fluid {
-        max-width: 65%;
+        max-width: 70%;
         padding: 0 50px; 
     }
 }
@@ -359,4 +359,13 @@ margin-top: 20px;
 #typography .subtext, #colors .subtext {
     margin-top: 20px;
     margin-bottom: 40px; 
+}
+
+.card:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
 }

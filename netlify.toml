@@ -1,6 +1,6 @@
 [[redirects]]
   from = "http://hello.kellyluo.me/*"
-  to = "https://kellyluo.me/about"
+  to = "https://kellyluo.me/about/"
   status = 301
   force = true
   query = {path = ":path"}

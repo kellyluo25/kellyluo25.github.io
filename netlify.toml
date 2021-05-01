@@ -2,7 +2,7 @@
   from = "/about"
   to = "http://hello.kellyluo.me/"
   status = 301
-  force = false
+  force = true
   query = {path = ":path"}
 
 
@@ -10,5 +10,5 @@
   from = "/resume"
   to = "http://resume.kellyluo.me/"
   status = 301
-  force = false
+  force = true
   query = {path = ":path"}

@@ -1,12 +1,12 @@
 [[redirects]]
   from = "http://hello.kellyluo.me"
   to = "https://kellyluo.me/about"
-  status = 200
+  status = 301!
   force = true
 
 
 [[redirects]]
   from = "https://resume.kellyluo.me"
   to = "https://kellyluo.me/resume"
-  status = 200
+  status = 301!
   force = true

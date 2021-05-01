@@ -1,4 +1,0 @@
-RewriteEngine on
-RewriteBase /
-
-RewriteRule ^/resume/(.*)$ http://resume.kellyluo.me/$1 [R=301,L]

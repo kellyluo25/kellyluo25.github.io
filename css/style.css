@@ -163,39 +163,48 @@ blockquote {
 
 
 /* links */
-a {
-    text-decoration: none; 
-    color: #979bdb;
 
+.card a, .page-footer a {
+    border-bottom: none; 
 }
 
-a.inlinelink {
-    color: #979bdb;
+.card a:hover {
+    text-decoration: none; 
+}
+
+span.inlinelink {
+    color: var(--lilac);
     border-bottom: 1px lightgray dotted; 
 }
 
-a.inlinelink:hover {
+span.inlinelink:hover {
     text-decoration: none; 
-    color: lightgray; 
+    color: var(--lightgray); 
+}
+
+a {
+    text-decoration: none; 
+    color: var(--lilac);
+    border-bottom: 1px lightgray dotted; 
 }
 
 a:hover {
-    color: #979bdb;
-    text-decoration: underline; 
+    text-decoration: none; 
+    color: var(--lightgray);  
 }
 
 a:active {
-    text-decoration: underline; 
-    color: #979bdb;
+    border-bottom: 1px lightgray dotted; 
+    color: var(--lilac);
 }
 
 a:selected {
-    text-decoration: underline; 
-    color: #979bdb;
+    border-bottom: 1px lightgray dotted; 
+    color: var(--lightgray);
 }
 
 .linkselect {
-    text-decoration: underline; 
+    border-bottom: 1px lightgray dotted; 
 }
 
 a.contactlinks {

@@ -1,6 +1,6 @@
 [[redirects]]
   from = "http://hello.kellyluo.me/*"
-  to = "/about"
+  to = "https://kellyluo.me/about"
   status = 301
   force = true
   query = {path = ":path"}
@@ -8,7 +8,7 @@
 
 [[redirects]]
   from = "https://resume.kellyluo.me/*"
-  to = "/resume"
+  to = "https://kellyluo.me/resume"
   status = 301
   force = true
   query = {path = ":path"}

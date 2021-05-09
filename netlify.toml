@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "http://hello.kellyluo.me"
+  from = "https://hello.kellyluo.me"
   to = "https://kellyluo.me/about"
   status = 301!
   force = true

@@ -182,6 +182,7 @@ span.inlinelink:hover {
     color: var(--lightgray); 
 }
 
+
 a {
     text-decoration: none; 
     color: var(--lilac);

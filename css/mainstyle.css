@@ -15,6 +15,15 @@ body {
     background-color: #fff;
     margin: 0 auto; 
     padding: 5% 6%; 
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media (min-width: 85rem) {
@@ -121,20 +130,22 @@ ul {
     font-style: italic; 
 }
 
-.caption a, .caption a:hover {
+.caption a {
     text-decoration: none;
     color: #000; 
-    transition: opacity 1s ease-in-out both;
 }
 
-@keyframes showtransition {
-  from {opacity: 0;}
-  to {opacity: 1;}
-} 
+.show .caption {
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
 
 .show:hover .caption {
-    display: block;
-    animation: showtransition 1s ease-in-out both;
+    opacity: 1;
+    max-height: 50px;
+    /* transition: none; */
 }
 
 ::selection {
